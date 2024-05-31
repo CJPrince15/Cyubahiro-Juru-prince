@@ -7,14 +7,3 @@ function activate(e) {
 }
 
 document.addEventListener('click',activate,false);
-
-
-document.getElementById('open1').addEventListener('click', function() {
-  window.location.href = 'https://www.thecactusinn.com/';
-});
-document.getElementById('open2').addEventListener('click', function() {
-  window.location.href = 'https:https://nuvisionhighschool.com/';
-});
-document.getElementById('open3').addEventListener('click', function() {
-  window.location.href = 'https://codepen.io/CJPrince';
-});
