@@ -2,28 +2,17 @@ const slider = document.querySelector('.slider');
 
 function activate(e) {
   const items = document.querySelectorAll('.item');
+  // Check if the clicked element is the 'next' button
   if (e.target.matches('.next')) {
+    // Move the first item to the end
     slider.append(items[0]);
   }
+  // Check if the clicked element is the 'prev' button
   if (e.target.matches('.prev')) {
+    // Move the last item to the beginning
     slider.prepend(items[items.length - 1]);
   }
 }
 
-document.addEventListener('click', function(event) {
-  if (event.target.matches('.next') || event.target.matches('.prev')) {
-    activate(event);
-  }
-});
-
-document.getElementById('open1').addEventListener('click', function() {
-  window.location.href = 'https://www.thecactusinn.com/';
-});
-
-document.getElementById('open2').addEventListener('click', function() {
-  window.location.href = 'https://nuvisionhighschool.com/';
-});
-
-document.getElementById('open3').addEventListener('click', function() {
-  window.location.href = 'https://codepen.io/CJPrince';
-});
+// Listen for clicks anywhere on the page
+document.addEventListener('click', activate, false);
