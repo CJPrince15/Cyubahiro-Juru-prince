@@ -1,238 +1,209 @@
-.links li a {
-    color: #5d5d5d; /* Set the text color to white */
- /* Remove underline from links */
-}
+/* === GOOGLE FONTS & GENERAL STYLES === */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* This will make only the "Get Started" link text white */
-.logo {
-  position: fixed;
-  left: 0;
-  z-index: 600;
-  margin-top: 10px;
-  padding: 50px;
-  
-}
-
-.logo img {
-  width: 75px;
-}
-
-.links{
-  float: left;
-  position: fixed;
-  right: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff; /* Set a default background color for the page */
 }
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  
+    list-style: none;
 }
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  
+
+/* Main container for the page content, adds padding */
+.content-container {
+    max-width: 1170px;
+    margin: auto; /* Centers the container */
+    padding: 120px 20px 50px 20px; /* Top, Right, Bottom, Left */
 }
 
 
-/* Start Landing Page */
- header {
-  min-height: 80px;
-  display: flex;
+/* === HEADER === */
+header .logo {
+    position: fixed;
+    top: 10px;
+    left: 50px;
+    z-index: 600;
 }
 
- header {
-    min-height: auto;
-    display: initial;
-  }
-
- header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
- header .logo {
-  color: #5d5d5d;
-  font-style: italic;
-  text-transform: uppercase;
-  font-size: 20px;
+header .logo img {
+    width: 75px;
 }
 
 header .links {
-  display: flex;
-  align-items: center;
+    position: fixed;
+    top: 25px; /* Aligned vertically */
+    right: 100px;
+    z-index: 600;
+}
+
+header .links ul {
+    display: flex;
 }
 
 header .links li {
-  margin-left: 30px;
-  color: #5d5d5d;
-  cursor: pointer;
-  transition: .3s;
+    margin-left: 30px;
+}
+
+header .links li a {
+    color: #5d5d5d;
+    cursor: pointer;
+    transition: .3s;
 }
 
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea, input[type=email], input[type=tel] {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+/* === CONTACT PAGE LAYOUT === */
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-/* placeholder for country*/
-
-.country option:first {
-    color: #999;
+.form-column {
+    flex: 2;
+    min-width: 100px;
 }
 
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  border-radius: 20px;
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  color: #FFF;
-  background-color: #6E4536;
+.image-column {
+    flex: 1;
+    min-width: 500px;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #b5651d;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #fff;
-  padding: 20px;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
-}
-
-section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-  line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
-}
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-.container{
-  max-width: 1170px;
-  margin:auto;
-}
-.container1{
-  max-width: 1170px;
-  margin:auto;
-}
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
-ul{
-  list-style: none;
-}
-.footer{
-  background-color: #24262b;
-  padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col h4::before{
-  content: '';
-  position: absolute;
-  left:0;
-  bottom: -10px;
-  background-color: #e91e63;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-.footer-col ul li:not(:last-child){
-  margin-bottom: 10px;
-}
-.footer-col ul li a{
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-  color: #ffffff;
-  padding-left: 8px;
-}
-.footer-col .social-links a{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255,255,255,0.2);
-  margin:0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-  color: #24262b;
-  background-color: #ffffff;
-}
-
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
+.image-column img {
     width: 100%;
-}
+    height: auto;
+    border-radius: 8px;
 }
 
+/* === FORM STYLES === */
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none; /* Removed border for a cleaner look */
+    color: #FFF;
+    background-color: #6E4536;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #b5651d;
+}
+
+/* === FOOTER === */
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* === RESPONSIVE STYLES === */
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
