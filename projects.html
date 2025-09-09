@@ -1,123 +1,142 @@
-<head>
+
+<html lang="en">
+ <head>
         <title>Cyubahiro Juru Prince</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="projects.css">
+        <link href="index.css" rel="stylesheet">
     </head>
-
-
-<header>
- <div class="container">
-    <div class="logo">
+    <header>
+    <!-- navbar header -->
+  <div class="nav-header">
+    <div class="nav-brand">
       <a href="index.html">
               <img src="https://t4.ftcdn.net/jpg/04/83/87/01/360_F_483870106_zdagCPnrlMzo9RsAZfN1FIum4J0Pmq05.jpg">
       </a>
     </div>
-    <div class='links'>
-      <ul class="links">
+    <i class="fa fa-bars fa-3x"></i>
+    <div class="header-links">
+      <ul>
         <li data-menuanchor="fourthPage"><a href="contact.html">CONTACT</a></li>
         <li data-menuanchor="thirdPage"><a href="projects.html">PORTFOLIO</a></li>
-        <li data-menuanchor="secondPage"><a href="index.html">ABOUT</a></li>
+        <li data-menuanchor="secondPage"><a href="index.html">HOME</a></li>
+      </ul>
     </div>
-</div>
-</header>
-<div class='box'>
-  <main>
-  <ul class='slider'>
-    <li class='item' style="background-image: url('https://www.dine.thecactusinn.com/wp-content/uploads/2023/01/BGL_5838.jpg')">
-      <div class='content'>
-        <h2 class='title'>"Hotel Website"</h2>
-        <p class='description'> This Website offers a tantalizing glimpse into a world of elegance and relaxation, where every detail is meticulously crafted to exceed your expectations. Explore our lavish accommodations, exquisite dining options, and unparalleled amenities, all set against the backdrop of breathtaking surroundings. Whether you're planning a romantic getaway, a family vacation, or a business trip, let [Hotel Name] be your sanctuary of serenity. Book your stay with us today and experience hospitality redefined.</p>
-        <button id="open1">Visit</button>
-      </div>
-    </li>
-    <li class='item' style="background-image: url('//nuvisionhighschool.com/wp-content/uploads/2021/06/Knox-Hall-new-scaled.jpg')">
-      <div class='content'>
-        <h2 class='title'>"School Website"</h2>
-        <p class='description'> Introducing the high school website I crafted with care and creativity. Dive into a dynamic platform designed to engage students, parents, and educators alike. From event updates to academic resources, this site fosters connection and communication within the school community. Explore my work in web design and see how I bring ideas to life with functionality and flair.  </p>
-        <button id="open2">Read More</button>
-      </div>
-    </li>
-    <li class='item' style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/format:webp/0*5RywsoPi0Vr85TkS')">
-      <div class='content'>
-        <h2 class='title'>"Personal Projects"</h2>
-        <p class='description'> Here is a few of my Personal Projects and Class Work  </p>
-        <button id="open3">Read More</button>
-      </div>
-    </li>
-    <li class='item' style="background-image: url('https://www.dine.thecactusinn.com/wp-content/uploads/2023/01/BGL_5838.jpg')">
-      <div class='content'>
-        <h2 class='title'>"Hotel Website"</h2>
-        <p class='description'>
-          his Website offers a tantalizing glimpse into a world of elegance and relaxation, where every detail is meticulously crafted to exceed your expectations. Explore our lavish accommodations, exquisite dining options, and unparalleled amenities, all set against the backdrop of breathtaking surroundings. Whether you're planning a romantic getaway, a family vacation, or a business trip, let [Hotel Name] be your sanctuary of serenity. Book your stay with us today and experience hospitality redefined.
-        </p>
-        <button id="open1">Visit</button>
-      </div>
-    </li>
-    <li class='item' style="background-image: url('//nuvisionhighschool.com/wp-content/uploads/2021/06/Knox-Hall-new-scaled.jpg')">
-      <div class='content'>
-        <h2 class='title'>"School Website"</h2>
-        <p class='description'> Introducing the high school website I crafted with care and creativity. Dive into a dynamic platform designed to engage students, parents, and educators alike. From event updates to academic resources, this site fosters connection and communication within the school community. Explore my work in web design and see how I bring ideas to life with functionality and flair.  </p>
-        <button id="open2">Read More</button>
-      </div>
-    </li>
-    <li class='item' style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/format:webp/0*5RywsoPi0Vr85TkS')">
-      <div class='content'>
-        <h2 class='title'>"Personal Projects"</h2>
-        <p class='description'> Here is a few of my Personal Projects and Class Work  </p>
-        <button id="open3">Read More</button>
-      </div>
-    </li>
-  </ul>
-  <nav class='nav'>
-    <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
-    <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
-  </nav>
-</main>
- <script type="module"  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">  </script>
-</div>
+  </div>
+  <!-- end navbar header -->
 
-<div class='box'>
-<!--==================== FOOTER ====================-->
-  <footer class="footer">
-    <div class="container1">
+  <!-- sidebar slider -->
+  <div class="nav-screen">
+    <i class="fa fa-times fa-3x"></i>
+    <div class="nav-container">
+      <div class="nav-links">
+        <ul id='myMenu'>
+          <li data-menuanchor="secondPage"><a href="index.html">HOME</a></li>
+          <li data-menuanchor="thirdPage"><a href="projects.html">PORTFOLIO</a></li>
+          <li data-menuanchor="fourthPage"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end navbar slider -->
+</header>
+<body>
+    <main>
+    <ul class='slider'>
+        <li class='item' style="background-image: url('https://www.dine.thecactusinn.com/wp-content/uploads/2023/01/BGL_5838.jpg')">
+            <div class='content'>
+                <h2 class='title'>"Luxury Hotel Landing Page"</h2>
+                <p class='description'>A modern and elegant front-end design for a luxury hotel, focusing on a clean UI and responsive design.</p>
+                <a href="https://www.thecactusinn.com/" target="_blank"><button>Visit Site</button></a>
+            </div>
+        </li>
+        <li class='item' style="background-image: url('https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=2070&auto=format&fit=crop')">
+            <div class='content'>
+                <h2 class='title'>"Front-End Projects"</h2>
+                <p class='description'>A collection of my front-end work, including interactive UIs, animations, and responsive layouts.</p>
+                <a href="https://codepen.io/CJPrince" target="_blank"><button>View on CodePen</button></a>
+            </div>
+        </li>
+        <li class='item' style="background-image: url('https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop')">
+            <div class='content'>
+                <h2 class='title'>"Back-End Development"</h2>
+                <p class='description'>A collection of my back-end projects, including RESTful APIs, database management, and user authentication systems.</p>
+                <a href="https://github.com/CJPrince15" target="_blank"><button>View on GitHub</button></a>
+            </div>
+        </li>
+        
+        <li class='item' style="background-image: url('https://www.dine.thecactusinn.com/wp-content/uploads/2023/01/BGL_5838.jpg')">
+            <div class='content'>
+                <h2 class='title'>"Luxury Hotel Landing Page"</h2>
+                <p class='description'>A modern and elegant front-end design for a luxury hotel, focusing on a clean UI and responsive design.</p>
+                <a href="https://www.thecactusinn.com/" target="_blank"><button>Visit Site</button></a>
+            </div>
+        </li>
+        <li class='item' style="background-image: url('https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=2070&auto=format&fit=crop')">
+            <div class='content'>
+                <h2 class='title'>"Front-End Projects"</h2>
+                <p class='description'>A collection of my front-end work, including interactive UIs, animations, and responsive layouts.</p>
+                <a href="https://codepen.io/CJPrince" target="_blank"><button>View on CodePen</button></a>
+            </div>
+        </li>
+        <li class='item' style="background-image: url('https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=2070&auto=format&fit=crop')">
+            <div class='content'>
+                <h2 class='title'>"Back-End Development"</h2>
+                <p class='description'>A collection of my back-end projects, including RESTful APIs, database management, and user authentication systems.</p>
+                <a href="https://github.com/CJPrince15" target="_blank"><button>View on GitHub</button></a>
+            </div>
+        </li>
+    </ul>
+    <nav class='nav'>
+        <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+        <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+    </nav>
+</main>
+
+   <footer class="footer">
+     <div class="container1">
       <div class="row">
         <div class="footer-col">
           <h4>ME</h4>
           <ul>
-            <li><a href="#">about me</a></li>
-            <li><a href="#">My services</a></li>
+            <li><a href="index.html">About me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="projects.html">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>My Education</h4>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">BACHELOR</a></li>
-            <li><a href="#">CERTIFICATION</a></li>
-            <li><a href="#">HIGH SCHOOL</a></li>
+            <li><a href="https://vistula.edu.pl/kierunki-studiow/informatyka">Bachelor</a></li>
+            <li><a href="https://nuvisionhighschool.com/">High School</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>EXPERIENCE</h4>
           <ul>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">WORK</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="https://www.linkedin.com/in/princejurucyubahiro/">WORK</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>follow us</h4>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/cyubahiro_._/"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://codepen.io/CJPrince" target="_blank"><i class="fab fa-codepen"></i></a>
+            <a href="https://github.com/CJPrince15" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/cyubahiro_._/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/princejurucyubahiro/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
       </div>
-    </div>
-  </footer>  <script src="projects.js"></script>  
- </div>
+     </div>
+  </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
