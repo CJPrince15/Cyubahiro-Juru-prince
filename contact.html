@@ -1,31 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-        <title>Cyubahiro Juru Prince</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="contact.css">
-    </head>
-<header>
-<div class="container">
-    <div class="logo">
-      <a href="index.html">
-              <img src="https://t4.ftcdn.net/jpg/04/83/87/01/360_F_483870106_zdagCPnrlMzo9RsAZfN1FIum4J0Pmq05.jpg">
-      </a>
-    </div>
-    <div class='links'>
-      <ul class="links">
-        <li data-menuanchor="fourthPage"><a href="contact.html">CONTACT</a></li>
-        <li data-menuanchor="thirdPage"><a href="projects.html">PORTFOLIO</a></li>
-        <li data-menuanchor="secondPage"><a href="index.html">ABOUT</a></li>
-    </div>
-</div>
+    <title>Cyubahiro Juru Prince - Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://t4.ftcdn.net/jpg/04/83/87/01/360_F_483870106_zdagCPnrlMzo9RsAZfN1FIum4J0Pmq05.jpg" alt="Logo">
+            </a>
+        </div>
+        <div class='links'>
+            <ul class="links">
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="projects.html">PORTFOLIO</a></li>
+                <li><a href="index.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </header>
 
-
-<div class="container" >
-  <form name="contact" data-netlify="true">
-
-    <label for="fname">First Name</label>
+    <main class="content-container">
+        
+        <div class="contact-wrapper">
+            
+            <div class="form-column">
+                <form name="contact" data-netlify="true">
+                  <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
@@ -276,65 +282,60 @@
     <option value="Zambia">Zambia</option>
     <option value="Zimbabwe">Zimbabwe</option>
     </select>
+                  <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px" required></textarea>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit"> 
+                  
+                    
+                </form>
+            </div>
 
-    <input type="submit" value="Submit">
+            <div class="image-column">
+                <img src="https://t4.ftcdn.net/jpg/03/13/54/57/360_F_313545701_4pSbBZzBgdXqB0H4QrujyymPeUkLEa29.jpg" alt="Contact illustration">
+            </div>
 
-  </form>
-  <img src="https://t4.ftcdn.net/jpg/03/13/54/57/360_F_313545701_4pSbBZzBgdXqB0H4QrujyymPeUkLEa29.jpg">
-</div>
-
-</header>
-
-
- <!-- End Contact Page -->
-<head>
-  <title>Footer Design</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-
-  <footer class="footer">
-     <div class="container1">
-      <div class="row">
-        <div class="footer-col">
-          <h4>ME</h4>
-          <ul>
-            <li><a href="index.html">About me</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><a href="projects.html">FAQ</a></li>
-          </ul>
         </div>
-        <div class="footer-col">
-          <h4>My Education</h4>
-          <ul>
-            <li><a href="https://vistula.edu.pl/kierunki-studiow/informatyka">Bachelor</a></li>
-            <li><a href="https://nuvisionhighschool.com/">High School</a></li>
-          </ul>
+    
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>ME</h4>
+                    <ul>
+                        <li><a href="index.html">About me</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                        <li><a href="projects.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>My Education</h4>
+                    <ul>
+                        <li><a href="https://vistula.edu.pl/kierunki-studiow/informatyka">Bachelor</a></li>
+                        <li><a href="https://nuvisionhighschool.com/">High School</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>EXPERIENCE</h4>
+                    <ul>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="https://www.linkedin.com/in/princejurucyubahiro/">WORK</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow me</h4>
+                    <div class="social-links">
+                        <a href="https://codepen.io/CJPrince" target="_blank"><i class="fab fa-codepen"></i></a>
+                        <a href="https://github.com/CJPrince15" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/cyubahiro_._/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/princejurucyubahiro/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>EXPERIENCE</h4>
-          <ul>
-            <li><a href="projects.html">PROJECTS</a></li>
-            <li><a href="https://www.linkedin.com/in/princejurucyubahiro/">WORK</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>follow us</h4>
-          <div class="social-links">
-            <a href="https://codepen.io/CJPrince" target="_blank"><i class="fab fa-codepen"></i></a>
-            <a href="https://github.com/CJPrince15" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/cyubahiro_._/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/princejurucyubahiro/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-     </div>
-  </footer>
+    </footer>
 
 </body>
+</html>
